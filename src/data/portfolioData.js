@@ -11,7 +11,7 @@ export const NAV_LINKS = [
 // ─── PERSONAL DETAILS ─────────────────────────────────────────
 export const PERSONAL_INFO = {
   name: 'Dnyaneshwari Vairale',
-  tagline: 'Electronics & Telecommunication Engineering Student | Software & Backend Developer',
+  tagline: 'Final-year E&TC Student at KJCOEMR (SPPU) | Software & Backend Developer',
   cgpa: '9.0',
   phone: '+91 8308407650',
   rawPhone: '8308407650',
@@ -23,7 +23,7 @@ export const PERSONAL_INFO = {
   linkedinUrl: 'https://linkedin.com/in/dnyaneshwari-vairale-8523713a8',
   linkedinHandle: 'dnyaneshwari-vairale-8523713a8',
   summary:
-    'Motivated third-year Electronics and Telecommunication engineering student (9.0 CGPA) with a strong foundation in Java and Python. Actively expanding expertise in software development and backend engineering. Passionate learner eager to apply technical and problem-solving skills in a dynamic software engineering role. Possesses a solid understanding of core E&TC subjects and enjoys creative pursuits like painting and singing to naturally foster balance and creativity.',
+    'Motivated final-year Electronics and Telecommunication engineering student at KJCOEMR (SPPU) with a 9.0 CGPA and a strong foundation in Java and Python. Actively expanding expertise in software development and backend engineering. Passionate learner eager to apply technical and problem-solving skills in a dynamic software engineering role. Possesses a solid understanding of core E&TC subjects and enjoys creative pursuits like painting and singing to naturally foster balance and creativity.',
 };
 
 // ─── SKILLS ───────────────────────────────────────────────────
@@ -151,7 +151,7 @@ export const EDUCATION = [
     score: '9.0 CGPA',
     highlight: true,
     location: 'Pune, Maharashtra',
-    details: 'Third-year undergraduate student with strong foundation in core E&TC, Java, Python, and software engineering.',
+    details: 'Final-year undergraduate student at KJCOEMR (SPPU) with strong foundation in core E&TC, Java, Python, and software engineering.',
   },
 ];
 
