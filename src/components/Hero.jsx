@@ -23,31 +23,44 @@ export default function Hero() {
       <div className="relative z-10 max-w-6xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
 
-          {/* Left Column: Bio & Actions (7 cols) */}
+          {/* Left Column */}
           <div className="lg:col-span-7 text-center lg:text-left">
 
-            {/* Status Tag */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-4">
-              <span className="w-2 h-2 rounded-full bg-blue-400" />
-              <span>E&TC Graduate · KJCOEMR · SPPU</span>
+            {/* Top Badge Pills Row */}
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-6">
+              <div
+                className="inline-flex items-center gap-2 px-4 py-1.5 text-xs font-semibold rounded-full"
+                style={{ background: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.35)', color: '#34d399' }}
+              >
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                Seeking Entry-Level Roles · 2027 Grad
+              </div>
+              <div
+                className="inline-flex items-center gap-2 px-4 py-1.5 text-xs font-semibold rounded-full"
+                style={{ background: 'rgba(139,92,246,0.12)', border: '1px solid rgba(139,92,246,0.35)', color: '#a78bfa' }}
+              >
+                <span style={{ color: '#c084fc' }}>⚡</span>
+                BlockPay dApp · KJCOEMR Hackathon Qualifier
+              </div>
             </div>
 
             {/* Name */}
-            <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-3">
+            <h1 className="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-3">
               Hi, I'm <span className="gradient-text">{PERSONAL_INFO.name}</span>
             </h1>
 
             {/* Role */}
-            <p className="text-lg sm:text-xl font-medium text-slate-300 mb-4">
-              {PERSONAL_INFO.tagline}
+            <p className="text-lg sm:text-xl font-bold text-white mb-5">
+              Electronics &amp; Telecommunication Engineer
             </p>
 
-            {/* Tech pills */}
+            {/* Tech Pills */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-6">
-              {['Java', 'Python', 'SQL', 'React.js', 'Solidity', 'AI / ML', 'OpenCV'].map((tech) => (
+              {['Software Development', 'Java & Python', 'React.js', 'AI / ML', 'Web3 & Solidity'].map((tech) => (
                 <span
                   key={tech}
-                  className="px-2.5 py-1 text-xs font-medium rounded-md bg-slate-800 text-slate-300 border border-slate-700"
+                  className="px-3 py-1 text-xs font-medium rounded-md"
+                  style={{ background: 'rgba(30,41,59,0.8)', border: '1px solid rgba(71,85,105,0.6)', color: '#cbd5e1' }}
                 >
                   {tech}
                 </span>
@@ -56,7 +69,23 @@ export default function Hero() {
 
             {/* Summary */}
             <p className="text-slate-400 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
-              Electronics and Telecommunication engineering graduate (<strong className="text-white font-semibold">{PERSONAL_INFO.cgpa} CGPA</strong>) at <strong className="text-slate-200">Savitribai Phule Pune University (KJCOEMR)</strong> with a strong foundation in Java and Python. Actively expanding expertise in software development, backend engineering, and machine learning.
+              <span
+                className="font-semibold"
+                style={{
+                  background: 'linear-gradient(90deg, rgba(99,102,241,0.25), rgba(59,130,246,0.15))',
+                  borderBottom: '1px solid rgba(99,102,241,0.5)',
+                  color: '#93c5fd',
+                  padding: '0 4px',
+                  borderRadius: '3px',
+                }}
+              >
+                Final-year E&amp;TC student at KJCOEMR (SPPU)
+              </span>{' '}
+              with a strong academic foundation (
+              <strong className="text-white font-semibold">{PERSONAL_INFO.cgpa} CGPA</strong>
+              ) and practical exposure spanning Java, Python, React.js, and Web3 development. Built a
+              decentralized BlockPay dApp qualifying for the college hackathon next stage. Actively
+              deepening expertise in software development, backend engineering, and machine learning.
             </p>
 
             {/* Action Buttons */}
@@ -65,58 +94,46 @@ export default function Hero() {
                 href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold text-sm bg-blue-600 hover:bg-blue-500 text-white transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold text-sm text-white transition-all hover:opacity-90 hover:scale-[1.02]"
+                style={{ background: 'linear-gradient(135deg, #7c3aed, #4f46e5)', boxShadow: '0 4px 20px rgba(124,58,237,0.35)' }}
               >
-                <FileText size={16} />
-                <span>View Resume</span>
+                <FileText size={15} />
+                View Resume
               </a>
-
               <a
                 href="/resume.pdf"
-                download="Dnyaneshwari_Vairale_Resume.pdf"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold text-sm bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-colors"
+                download="Dnyaneshwari_Finalyear_Resume.pdf"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold text-sm text-slate-200 transition-all hover:bg-slate-700 hover:scale-[1.02]"
+                style={{ background: 'rgba(30,41,59,0.9)', border: '1px solid rgba(71,85,105,0.7)' }}
               >
-                <Download size={16} />
-                <span>Download CV</span>
+                <Download size={15} />
+                Download CV
               </a>
-
               <a
                 href={`mailto:${PERSONAL_INFO.email}`}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold text-sm bg-slate-800/60 hover:bg-slate-800 text-slate-300 border border-slate-700/60 transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold text-sm text-slate-300 transition-all hover:bg-slate-800 hover:scale-[1.02]"
+                style={{ background: 'rgba(15,23,42,0.7)', border: '1px solid rgba(71,85,105,0.5)' }}
               >
-                <Mail size={16} />
-                <span>Get in Touch</span>
+                <Mail size={15} />
+                Get In Touch
               </a>
             </div>
 
-            {/* Quick Contact Chips */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 text-xs text-slate-400">
-              <a
-                href={`tel:${PERSONAL_INFO.rawPhone}`}
-                className="inline-flex items-center gap-1.5 hover:text-white transition-colors text-slate-400"
-              >
+            {/* Contact Chips */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs text-slate-400">
+              <a href={`tel:${PERSONAL_INFO.rawPhone}`} className="inline-flex items-center gap-1.5 hover:text-white transition-colors">
                 <Phone size={13} className="text-emerald-400" />
                 <span>{PERSONAL_INFO.phone}</span>
               </a>
-              <span className="inline-flex items-center gap-1.5 text-slate-400">
+              <span className="inline-flex items-center gap-1.5">
                 <MapPin size={13} className="text-rose-400" />
-                <span>{PERSONAL_INFO.location}</span>
+                <span>Pune, Maharashtra</span>
               </span>
-              <a
-                href={PERSONAL_INFO.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 hover:text-white transition-colors text-slate-400"
-              >
+              <a href={PERSONAL_INFO.githubUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-white transition-colors">
                 <Github size={13} />
-                <span>GitHub</span>
+                <span>github.com/{PERSONAL_INFO.githubHandle}</span>
               </a>
-              <a
-                href={PERSONAL_INFO.linkedinUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 hover:text-white transition-colors text-slate-400"
-              >
+              <a href={PERSONAL_INFO.linkedinUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-white transition-colors">
                 <Linkedin size={13} className="text-blue-400" />
                 <span>LinkedIn</span>
               </a>
@@ -124,20 +141,18 @@ export default function Hero() {
 
           </div>
 
-          {/* Right Column: Glowing Profile Card */}
+          {/* Right Column: Profile Card */}
           <div className="lg:col-span-5 flex justify-center">
             <div
               className="relative w-full max-w-sm rounded-2xl p-6"
               style={{
-                background: 'linear-gradient(160deg, rgba(15,23,42,0.95) 0%, rgba(15,23,42,0.85) 100%)',
+                background: 'linear-gradient(160deg, rgba(15,23,42,0.97) 0%, rgba(15,23,42,0.88) 100%)',
                 border: '1px solid rgba(99,102,241,0.25)',
                 boxShadow: '0 0 60px rgba(99,102,241,0.1), inset 0 1px 0 rgba(255,255,255,0.05)',
               }}
             >
-              {/* Photo + Badges area */}
+              {/* Photo + Badges */}
               <div className="relative flex justify-center mb-5">
-
-                {/* CGPA Badge — top-right of circle */}
                 <div
                   className="absolute -top-2 right-4 z-20 flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-white whitespace-nowrap"
                   style={{
@@ -151,7 +166,6 @@ export default function Hero() {
                   <span>{PERSONAL_INFO.cgpa} CGPA</span>
                 </div>
 
-                {/* Glowing gradient ring */}
                 <div
                   className="w-44 h-44 rounded-full p-[3px]"
                   style={{
@@ -159,7 +173,6 @@ export default function Hero() {
                     boxShadow: '0 0 35px 4px rgba(99,102,241,0.5), 0 0 70px 8px rgba(59,130,246,0.2)',
                   }}
                 >
-                  {/* Dark gap ring */}
                   <div className="w-full h-full rounded-full p-[4px] bg-slate-950">
                     <img
                       src={avatarImg}
@@ -169,7 +182,6 @@ export default function Hero() {
                   </div>
                 </div>
 
-                {/* Specialty badge — bottom of ring */}
                 <div
                   className="absolute -bottom-4 left-1/2 -translate-x-1/2 z-20 flex items-center gap-1.5 px-4 py-1.5 text-xs font-semibold text-white whitespace-nowrap"
                   style={{
@@ -180,7 +192,7 @@ export default function Hero() {
                   }}
                 >
                   <span style={{ color: '#818cf8' }}>⚙</span>
-                  <span>Software & E&TC</span>
+                  <span>Software &amp; E&amp;TC</span>
                 </div>
               </div>
 
@@ -188,32 +200,25 @@ export default function Hero() {
               <div className="text-center mt-6 mb-5">
                 <h2 className="text-xl font-bold text-white tracking-tight">{PERSONAL_INFO.name}</h2>
                 <p className="text-sm font-medium mt-1" style={{ color: '#22d3ee' }}>
-                  KJCOEMR · SPPU Graduate
+                  KJCOEMR · SPPU Graduate 2027
                 </p>
               </div>
 
-              {/* Divider */}
               <div style={{ height: '1px', background: 'rgba(99,102,241,0.15)', marginBottom: '16px' }} />
 
-              {/* Info Boxes */}
+              {/* Domain / Activity Grid */}
               <div className="grid grid-cols-2 gap-3 mb-3">
-                <div
-                  className="rounded-xl p-3"
-                  style={{ background: 'rgba(30,41,59,0.6)', border: '1px solid rgba(71,85,105,0.4)' }}
-                >
+                <div className="rounded-xl p-3" style={{ background: 'rgba(30,41,59,0.6)', border: '1px solid rgba(71,85,105,0.4)' }}>
                   <p className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 mb-1">Domain</p>
-                  <p className="text-sm font-bold text-white">Software & E&TC</p>
+                  <p className="text-sm font-bold text-white">Software &amp; E&amp;TC</p>
                 </div>
-                <div
-                  className="rounded-xl p-3"
-                  style={{ background: 'rgba(30,41,59,0.6)', border: '1px solid rgba(71,85,105,0.4)' }}
-                >
+                <div className="rounded-xl p-3" style={{ background: 'rgba(30,41,59,0.6)', border: '1px solid rgba(71,85,105,0.4)' }}>
                   <p className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 mb-1">Activity</p>
                   <p className="text-sm font-bold" style={{ color: '#4ade80' }}>IEEE Council</p>
                 </div>
               </div>
 
-              {/* Hackathon highlight bar */}
+              {/* Hackathon bar */}
               <div
                 className="flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-xs font-semibold text-white"
                 style={{
@@ -232,10 +237,10 @@ export default function Hero() {
         {/* Stats Strip */}
         <div className="mt-14 pt-8 border-t border-slate-800 grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { label: 'Academic CGPA', value: '9.0', detail: 'SPPU (KJCOEMR)' },
-            { label: 'Featured Projects', value: '2', detail: 'Web3 dApp & AI Vision' },
-            { label: 'Student Council', value: 'IEEE', detail: 'Active Member (2025–Present)' },
-            { label: 'Hackathon', value: 'Finalist', detail: 'BlockPay Presentation' },
+            { label: 'Academic CGPA',     value: '9.0',       detail: 'SPPU (KJCOEMR)' },
+            { label: 'Featured Projects', value: '2',         detail: 'Web3 dApp & AI Vision' },
+            { label: 'Student Council',   value: 'IEEE',      detail: 'Active Member (2025–Present)' },
+            { label: 'Hackathon',         value: 'Qualifier', detail: 'BlockPay dApp' },
           ].map((item) => (
             <div key={item.label} className="p-4 rounded-xl bg-slate-900/40 border border-slate-800">
               <p className="text-2xl font-bold text-white">{item.value}</p>
@@ -245,13 +250,13 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Scroll link */}
+        {/* Scroll Hint */}
         <div className="mt-10 text-center">
           <button
             onClick={() => scrollToSection('#skills')}
             className="text-slate-500 hover:text-slate-300 text-xs inline-flex items-center gap-1 bg-transparent border-0 cursor-pointer transition-colors"
           >
-            <span>Explore Skills & Projects</span>
+            <span>Explore Skills &amp; Projects</span>
             <ChevronDown size={14} />
           </button>
         </div>
