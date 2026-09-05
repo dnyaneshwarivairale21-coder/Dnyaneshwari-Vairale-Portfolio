@@ -29,7 +29,7 @@ export default function Hero() {
             {/* Status Tag */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-4">
               <span className="w-2 h-2 rounded-full bg-blue-400" />
-              <span>Third-Year E&TC Student · Class of 2027</span>
+              <span>E&TC Graduate · KJCOEMR · SPPU</span>
             </div>
 
             {/* Name */}
@@ -56,7 +56,7 @@ export default function Hero() {
 
             {/* Summary */}
             <p className="text-slate-400 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
-              Motivated third-year Electronics and Telecommunication engineering student (<strong className="text-white font-semibold">{PERSONAL_INFO.cgpa} CGPA</strong>) at <strong className="text-slate-200">Savitribai Phule Pune University (KJCOEMR)</strong> with a strong foundation in Java and Python. Actively expanding expertise in software development, backend engineering, and machine learning.
+              Electronics and Telecommunication engineering graduate (<strong className="text-white font-semibold">{PERSONAL_INFO.cgpa} CGPA</strong>) at <strong className="text-slate-200">Savitribai Phule Pune University (KJCOEMR)</strong> with a strong foundation in Java and Python. Actively expanding expertise in software development, backend engineering, and machine learning.
             </p>
 
             {/* Action Buttons */}
@@ -188,7 +188,7 @@ export default function Hero() {
               <div className="text-center mt-6 mb-5">
                 <h2 className="text-xl font-bold text-white tracking-tight">{PERSONAL_INFO.name}</h2>
                 <p className="text-sm font-medium mt-1" style={{ color: '#22d3ee' }}>
-                  KJCOEMR · SPPU Graduate 2027
+                  KJCOEMR · SPPU Graduate
                 </p>
               </div>
 

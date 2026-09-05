@@ -49,7 +49,7 @@ export default function Navbar() {
               {PERSONAL_INFO.name}
             </span>
             <span className="text-[11px] text-slate-400 hidden sm:block">
-              E&TC Student · SPPU
+              E&TC Graduate · SPPU
             </span>
           </div>
         </a>
