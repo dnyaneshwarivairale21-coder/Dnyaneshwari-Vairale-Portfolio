@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="50%" stop-color="#111c38" />
+      <stop offset="100%" stop-color="#0a0f1d" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="70%" stop-color="#818cf8" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#38bdf8" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Base Circle & Glow -->
+  <rect width="400" height="400" fill="url(#bgGrad)" rx="200" />
+  <circle cx="200" cy="200" r="180" fill="url(#glow)" />
+
+  <!-- Outer Tech Circuit Ring -->
+  <circle cx="200" cy="200" r="170" fill="none" stroke="url(#accentGrad)" stroke-width="2.5" stroke-dasharray="14 10 4 10" opacity="0.6" />
+  <circle cx="200" cy="200" r="156" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="6 8" />
+
+  <!-- Circuit nodes -->
+  <circle cx="70" cy="140" r="3.5" fill="#38bdf8" />
+  <line x1="70" y1="140" x2="110" y2="140" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.4" />
+  <circle cx="110" cy="140" r="2.5" fill="#818cf8" />
+
+  <circle cx="330" cy="260" r="3.5" fill="#c084fc" />
+  <line x1="330" y1="260" x2="290" y2="260" stroke="#c084fc" stroke-width="1.5" stroke-opacity="0.4" />
+  <circle cx="290" cy="260" r="2.5" fill="#38bdf8" />
+
+  <!-- Center Hexagon / Shield Frame -->
+  <polygon points="200,90 285,140 285,240 200,290 115,240 115,140" fill="#0f172a" stroke="url(#accentGrad)" stroke-width="2.5" filter="url(#shadow)" opacity="0.95" />
+
+  <!-- Female Engineer Silhouette / Minimalist Tech Avatar -->
+  <g transform="translate(200, 195) scale(0.9)">
+    <!-- Shoulders & Torso -->
+    <path d="M-60 85 C-55 45, -35 25, 0 25 C35 25, 55 45, 60 85 Z" fill="url(#accentGrad)" opacity="0.85" />
+    
+    <!-- Neck -->
+    <rect x="-14" y="0" width="28" height="30" rx="6" fill="#fbcfe8" opacity="0.9" />
+
+    <!-- Head & Face -->
+    <ellipse cx="0" cy="-22" rx="30" ry="36" fill="#fbcfe8" />
+
+    <!-- Sleek Tech Haircut / Hair Bun / Flow -->
+    <path d="M-34 -25 C-34 -65, 34 -65, 34 -25 C34 -10, 30 15, 26 22 C18 0, 18 -45, 0 -45 C-18 -45, -18 0, -26 22 C-30 15, -34 -10, -34 -25 Z" fill="#1e1b4b" />
+    <circle cx="0" cy="-62" r="14" fill="#1e1b4b" />
+
+    <!-- Modern Tech Glasses -->
+    <rect x="-26" y="-28" width="22" height="13" rx="4" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <rect x="4" y="-28" width="22" height="13" rx="4" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <line x1="-4" y1="-22" x2="4" y2="-22" stroke="#38bdf8" stroke-width="2" />
+
+    <!-- Glowing Tech Smile -->
+    <path d="M-10 -7 Q0 -1 10 -7" fill="none" stroke="#be185d" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Modern Initials Monogram Badge -->
+  <rect x="155" y="295" width="90" height="28" rx="14" fill="#090d1a" stroke="url(#accentGrad)" stroke-width="1.5" />
+  <text x="200" y="314" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="13" font-weight="800" letter-spacing="2" fill="url(#textGrad)" text-anchor="middle">DV · 2027</text>
+</svg>
