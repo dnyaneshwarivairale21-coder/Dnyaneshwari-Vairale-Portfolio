@@ -206,14 +206,14 @@ export const CONTACT_LINKS = [
   },
   {
     label: 'GitHub',
-    value: 'github.com/demo-dnyaneshwari',
-    href: 'https://github.com/demo-dnyaneshwari',
+    value: 'github.com/dnyaneshwari',
+    href: 'https://github.com/dnyaneshwarivairale21-coder',
     gradient: 'linear-gradient(135deg,#818cf8,#c084fc)',
   },
   {
     label: 'LinkedIn',
-    value: 'linkedin.com/in/demo-dnyaneshwari',
-    href: 'https://www.linkedin.com/in/demo-dnyaneshwari',
+    value: 'linkedin.com/in/dnyaneshwari',
+    href: 'https://www.linkedin.com/in/dnyaneshwari-vairale-8523713a8/',
     gradient: 'linear-gradient(135deg,#60a5fa,#4f46e5)',
   },
 ];
